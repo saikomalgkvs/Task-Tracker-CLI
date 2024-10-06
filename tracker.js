@@ -102,9 +102,9 @@ function listFilter(status){
 
 function printDocumentation(){
     console.log(`\nRefer to the following documention\n`)
-    console.log(`To add task: node tracker add 'task1' 'task2' ....`)
-    console.log(`To update description of a task: node update 'id' 'new_description'`)
-    console.log(`To delete a task: node tracker delete 'id1' 'id2' 'id3'....\n`)
+    console.log(`To add task: node tracker add 'task1' 'task2' ....\n`)
+    console.log(`To update description of a task: node update 'id' 'new_description'\n`)
+    console.log(`To delete a task: node tracker delete 'id1' 'id2' 'id3'....`)
     console.log(`To delete all tasks: node tracker delete all\n`)
     console.log(`To change the status of a task:
         To mark as 'in-progress': node tracker 'id' mark in-progress
