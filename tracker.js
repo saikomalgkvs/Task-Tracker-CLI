@@ -86,7 +86,7 @@ function changeStatus(id, status){
 function list(arg){
     const data = arg === undefined ? loadData() : arg
     data.forEach(task => {
-        console.log(`${task.id}: ${task.description}, Status: ${task.status}`)
+        console.log(`${task.id}:\tDescription - ${task.description},\tStatus - ${task.status},\tStarted on - ${task.createdAt},\tUpdated on - ${task.updatedAt}`)
     })
 }
 
