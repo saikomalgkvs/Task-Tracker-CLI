@@ -85,8 +85,8 @@ function changeStatus(id, status){
 }
 
 // DISPLAY TASKS
-function list(arg){
-    const data = arg === undefined ? loadData() : arg
+function list(){
+    const data = loadData()
     data.forEach(task => {
         console.log(`${task.id}:\tDescription - ${task.description},\tStatus - ${task.status},\tStarted on - ${task.createdAt},\tUpdated on - ${task.updatedAt}`)
     })
@@ -148,7 +148,7 @@ function main(){
             break
         default:
             console.log(`${command} is invalid`)
-            console.log(`For documentation type "node tracker help"`)
+            console.log(`For documentation type "tracker help"`)
     }
 }
 
